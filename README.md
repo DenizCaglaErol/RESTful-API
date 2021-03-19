@@ -309,6 +309,10 @@ When it was tried to delete a record with userID that does not exist, 400 Bad Re
 
 <a href="https://ibb.co/Tb5vBrs"><img src="https://i.ibb.co/QCGbFX4/DELETEHATA.png" alt="DELETEHATA" border="0"></a>
 
+If it was tried to http://localhost:8080/API/rest/users/GET2 404 Not Found Error Code was obtained.
+
+<a href="https://ibb.co/bd4LxXF"><img src="https://i.ibb.co/cTWtPQw/GET2HATA.png" alt="GET2HATA" border="0"></a>
+
 Finally, all users listed with the get request are as follows.
 
 <a href="https://ibb.co/dPH1rkT"><img src="https://i.ibb.co/gScH3t2/GETSON.png" alt="GETSON" border="0"></a>
