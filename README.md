@@ -266,3 +266,54 @@ public class UserService {
             }
         }
     }
+    
+Insomnia TEST
+At first, there is not any data in database. With GET request, it looks like that:
+<a href="https://ibb.co/WB1DJhD"><img src="https://i.ibb.co/2cB8498/GET1.png" alt="GET1" border="0"></a>
+
+<a href="https://ibb.co/fD5PcQb"><img src="https://i.ibb.co/MB43X9b/GETDB.png" alt="GETDB" border="0"></a>
+
+Then, it was sent a POST request and 201 Created code has been obtained. This user is also recorded in database. 
+
+<a href="https://ibb.co/xhx8fKb"><img src="https://i.ibb.co/F6Rq0k1/POST1.png" alt="POST1" border="0"></a>
+
+<a href="https://ibb.co/GPcN6xw"><img src="https://i.ibb.co/s3yzfmS/DB1.png" alt="DB1" border="0"></a>
+
+If a record with the same id as the first entered is entered, this time 501 Not Implemented error code is received. Then, it was created a user with different id.
+
+<a href="https://ibb.co/0y2t4Lk"><img src="https://i.ibb.co/QvQdSVZ/POSTHATA.png" alt="POSTHATA" border="0"></a>
+
+<a href="https://ibb.co/BsdCZHT"><img src="https://i.ibb.co/f0BxpVr/POST2.png" alt="POST2" border="0"></a>
+
+<a href="https://ibb.co/XXxg807"><img src="https://i.ibb.co/PxGnQXc/DB2.png" alt="DB2" border="0"></a>
+
+Then, for PUT request, it was written http://localhost:8080/API/rest/users/PUT1. It was sent a PUT request and 201 Accepted code has been obtained. For checking, GET request was sent by writing http://localhost:8080/API/rest/users/GET1.
+
+<a href="https://ibb.co/vdD4TLd"><img src="https://i.ibb.co/t23pvY2/PUT1.png" alt="PUT1" border="0"></a>
+
+<a href="https://ibb.co/vsWvZTv"><img src="https://i.ibb.co/DGFg5vg/GETID1.png" alt="GETID1" border="0"></a>
+
+<a href="https://ibb.co/N9JmKxK"><img src="https://i.ibb.co/zXB7ZsZ/DB3.png" alt="DB3" border="0"></a>
+
+When it was tried to update a record with userID that does not exist in database, 304 Not Modified Error code has been obtained.
+
+<a href="https://ibb.co/WkC6JLN"><img src="https://i.ibb.co/GWm0Sqf/PUTHATA.png" alt="PUTHATA" border="0"></a>
+
+The userID of the user to be deleted has been written as http://localhost: 8080 /API/rest/users/DELETE2. That is, the user with userID 2 was deleted and the code 202 Accepted was obtained.
+
+<a href="https://ibb.co/Prtmnjg"><img src="https://i.ibb.co/CwW1Z8Q/DELETE.png" alt="DELETE" border="0"></a>
+
+<a href="https://ibb.co/yqBSp6F"><img src="https://i.ibb.co/GR3T9WQ/DB4.png" alt="DB4" border="0"></a>
+
+When it was tried to delete a record with userID that does not exist, 400 Bad Request Error code has been obtained.
+
+<a href="https://ibb.co/Tb5vBrs"><img src="https://i.ibb.co/QCGbFX4/DELETEHATA.png" alt="DELETEHATA" border="0"></a>
+
+Finally, all users listed with the get request are as follows.
+
+<a href="https://ibb.co/dPH1rkT"><img src="https://i.ibb.co/gScH3t2/GETSON.png" alt="GETSON" border="0"></a>
+
+<a href="https://ibb.co/F751k2y"><img src="https://i.ibb.co/0JCLpT6/DBFINAL.png" alt="DBFINAL" border="0"></a>
+
+
+
