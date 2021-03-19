@@ -57,12 +57,12 @@ public class UserModel {
 
 		public void setEmail(String email) {
 			this.email = email;
-		}  
-	    
-	    
-}
+			} 
+		}
 
 For DatabaseOp.java class sqlite-jdbc-3.27.2.1.jar was added to referenced libraries of the project. This class contains methods that perform operations such as database connection, inserting, updating, and deleting. In addition to these, methods such as listing all users and listing the user whose id is entered are also included in this class. connect() method establishes connection with database, the insert() method adds new user records to database, the getAllUsers() method lists all users in the database, the getUserbyId() method lists the user whose id is entered, the delete() method deletes the user from the database, and the update() method updates the user.
+
+
 package net.codejava.ws;
 
 import java.sql.Connection;
